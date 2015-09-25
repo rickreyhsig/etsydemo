@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+<div class="center">
 <h1>Listing Listings</h1>
 
     <div class="row">
@@ -11,6 +12,7 @@
                         <p><%= number_to_currency listing.price %></p>
                         <%= link_to 'Show', listing, class: 'btn btn-link' %>
                         <%= link_to 'Edit', edit_listing_path(listing), class: 'btn btn-link' %>
+                        <%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-link' %>
                     </div>
               </div>
         <% end %>
@@ -19,3 +21,4 @@
 <br>
 
 <%= link_to 'New Listing', new_listing_path, class: 'btn btn-link' %>
+</div>
