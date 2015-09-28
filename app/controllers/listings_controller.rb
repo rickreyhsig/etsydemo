@@ -3,10 +3,15 @@ class ListingsController < ApplicationController
   before_filter :authenticate_user!, only: [:new, :create, :edit, :update, :destroy] # Permissions for autheticated users to add, edit, update and destroy listings
   before_filter :check_user, only: [:edit, :update, :destroy] # Permissions for authenticated users to edit, update and destroy only their own listings
 
+
+  def seller
+    @listings = Listing.where(user: current_user).order("created_at DESC")
+  end
+
   # GET /listings
   # GET /listings.json
   def index
-    @listings = Listing.all
+    @listings = Listing.all.order("created_at DESC")
   end
 
   # GET /listings/1
