@@ -41,3 +41,21 @@ body {
     font-size: 18px;
   }
 }
+
+.jumbotron {
+  background-image: url('');
+  background-image: url('handcraft.jpg');
+  background-image: url('https://photos-5.dropbox.com/t/2/AACA1tO8VlNNTrEu8I5TkR-8R_15Hp-4-lICNozXbYpDDQ/12/61136989/jpeg/32x32/1/_/1/2/handcraft.jpg/EOSMpOkDGDYgBygH/YxCnLuXgfT5IYHZqq3WgoUx2gmmUXuhQaWfg-E-Op5k?size=1280x960&size_mode=2');
+  background-image: url('https://photos-5.dropbox.com/t/2/AACA1tO8VlNNTrEu8I5TkR-8R_15Hp-4-lICNozXbYpDDQ/12/61136989/jpeg/32x32/1/_/1/2/handcraft.jpg/EOSMpOkDGDYgBygH/YxCnLuXgfT5IYHZqq3WgoUx2gmmUXuhQaWfg-E-Op5k?size=1280x960&size_mode=2?dl=0&raw=1');
+  background-image: url('https://dl.dropboxusercontent.com/content_link/b7Q5AY8IGx5ATujclwI1ABee5nhhyXhkblsceLmkoIO7uK3sTGMxbvxAYonGxAdU');
+  background-image: url('https://www.dropbox.com/s/p7dgvok0kagm9ed/handcraft.jpg?dl=0&raw=1');
+  h1, h2 {
+    font-family: guardian-egyptt, georgia, serif;
+  }
+  color: white;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+}
+
