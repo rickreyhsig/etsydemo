@@ -18,6 +18,13 @@
 <body>
 
     <%= render 'layouts/navbar' %> <!-- Render header -->
+    <% if current_page?('/') %>
+    <div class="jumbotron">
+      <h1>Handcrafts</h1><br /><br />
+      <h2>Discover one-of-a-kind items.</h2>
+    </div>
+    <% end %>
+
         <div class="container">
           <% flash.each do |name, msg| %>
             <% if msg.is_a?(String) %>
