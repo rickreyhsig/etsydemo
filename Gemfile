@@ -1,3 +1,4 @@
+source 'https://code.stripe.com'
 source 'https://rubygems.org'
 
 # Gem for HEROKU
@@ -31,6 +32,7 @@ gem 'carrierwave-dropbox'
 gem 'figaro'
 gem 'mini_magick'
 gem 'devise'
+gem 'stripe'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
